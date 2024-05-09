@@ -17,6 +17,7 @@ h1 {
   background-color: blue;
   font-size: 75px;
   font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Nav style rule */
@@ -24,29 +25,39 @@ nav,
 a {
   text-align: center;
   color: white;
-  background-color: aqua;
+  background-color: lightblue;
   font-size: 55px;
   font-weight: bold;
   text-decoration: none;
 }
 
 /* Main style rule */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+
 h2 {
   text-align: center;
   color: black;
-  font-size: 35px;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h3 {
   text-align: center;
   color: black;
   font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 p {
+  border-width: 2px;
   text-align: center;
   color: grey;
   font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 li {
@@ -54,65 +65,147 @@ li {
   color: grey;
   font-size: 25px;
   list-style-type: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.email {
+  font-size: 25px;
+  color: darkgoldenrod;
+  background-color: lightblue;
+}
+
+/* Home Screen Split */
+.split {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered h3 {
+  font-size: 35px;
+}
+
+.centered li {
+  font-size: 25px;
+}
+
+.image {
+  width: 300px;
+  height: 150px;
+  border-radius: 2%;
+}
+
+/* Mobile View */
+
+/* Hamburger Nav */
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 947px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  a {
+    font-size: 44px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .email {
+    font-size: 15px;
+  }
+
+  .image {
+    width:200px;
+    height: 100px;
+  }
+  }
+
+
+@media screen and (max-width: 947px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /* Footer style rule */
-footer {
-  text-align: center;
-  color: white;
-  background-color: purple;
-  font-size: 20px;
+footer p {
+  color: blue;
+  font-size: 15px;
   font-weight: bold;
+  position: sticky;
 }
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: aqua;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 40px;
-  }
-  
-  
-  .topnav a.active {
-    background-color: blue;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
