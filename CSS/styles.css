@@ -208,4 +208,6 @@ footer p {
   font-size: 15px;
   font-weight: bold;
   position: sticky;
+  left: 0;
+  bottom: 0;
 }
